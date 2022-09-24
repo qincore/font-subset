@@ -9,6 +9,7 @@ npm install @zeir/font-subset --save
 pnpm add @zeir/font-subset
 ```
 ## 使用
+首先将字体重命名为 `${fontFamily}-${fontSubFamily}.ttf`，放在 `./source-fonts` 目录（仅支持.ttf）
 ```js
 // index.js
 import { fontSubset } from "@zeir/font-subset";
