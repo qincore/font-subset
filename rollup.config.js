@@ -3,6 +3,7 @@ import typescript from '@rollup/plugin-typescript';
 import babel from "@rollup/plugin-babel";
 import fse from "fs-extra";
 import resolve from "@rollup/plugin-node-resolve";
+import { terser } from "rollup-plugin-terser";
 
 fse.emptyDirSync("./dist");
 
@@ -27,5 +28,6 @@ export default {
       extensions: [".ts"],
       moduleDirectories: [],
     }),
+    terser(),
   ],
 };

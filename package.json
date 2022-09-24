@@ -28,6 +28,7 @@
     "chalk": "^5.0.1",
     "fonteditor-core": "^2.1.8",
     "fs-extra": "^10.1.0",
+    "rollup-plugin-terser": "^7.0.2",
     "tslib": "^2.4.0"
   }
 }
