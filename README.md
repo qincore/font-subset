@@ -48,3 +48,6 @@ node ./index.js
 [ finish ] ✓ 已全部完成切片！
 ```
 以上就子集化完成啦！字体文件在`./fonts/${fontFamily}` 目录里。
+## Reference
+[misans](https://github.com/dsrkafuu/misans)  
+[中文 web font 切割工具](https://gitee.com/dongzhongzhidong/cn-font-split)
