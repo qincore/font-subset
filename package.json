@@ -1,6 +1,6 @@
 {
   "name": "@zeir/font-subset",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "dist/index.js",
   "type": "module",
@@ -11,7 +11,15 @@
     "font",
     "font-subset"
   ],
-  "author": "zeir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qincore/font-subset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qincore/font-subset/issues"
+  },
+  "homepage": "https://github.com/qincore/font-subset/blob/master/README.md",
+  "author": "zeir <andyhuyuxin@outlook.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.1",
