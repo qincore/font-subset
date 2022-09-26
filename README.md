@@ -29,7 +29,14 @@ fontSubset({
 // 使用自定义子集化方案
 fontSubset({
   fontFiles,
-  customSubset: [[23,665,7989],[9856,67453]]  // [[unicode的十进制数字(子集组)],[unicode的十进制数字(子集组)],...]
+  customSubset: [[23,665,7989],[9856,67453]],  // [[unicode的十进制数字(子集组)],[unicode的十进制数字(子集组)],...]
+});
+
+// 添加CDN基础链接
+fontSubset({
+  fontFiles,
+  type: 'google',  // 'google' || 'bili' || 'xiaomi'
+  baseUrl: 'cdn.xxxxx.com/font/',
 });
 ```
 ## 字体生成

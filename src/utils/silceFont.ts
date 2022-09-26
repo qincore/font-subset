@@ -24,7 +24,7 @@ const fontWeightMap = {
   'Black': 900,
 }
 
-export const sliceFont = async (fontFile: string, unicodes: (number[])[]) => {
+export const sliceFont = async (fontFile: string, unicodes: (number[])[], baseUrl: string) => {
   const fontFamily = path.basename(fontFile, '.ttf').split('-')[0];
   const fontSubFamily = path.basename(fontFile, '.ttf').split('-')[1];
   let css = '';
@@ -51,7 +51,7 @@ export const sliceFont = async (fontFile: string, unicodes: (number[])[]) => {
         `/*${key}*/` +
         `@font-face{font-family: ${fontFamily}-${fontSubFamily};font-style: normal;` +
         `font-weight: ${fontWeightMap[fontSubFamily]};font-display:swap;` +
-        `src: url('${fontFamily}-${fontSubFamily}.${key}.woff2') format('woff2');` +
+        `src: url('${baseUrl}${fontFamily}-${fontSubFamily}.${key}.woff2') format('woff2');` +
         `unicode-range: ${mergeRanges(range)};}\n`;
       console.log(`[ ${chalk.green('ok')} ] > ${fontFamily}-${fontSubFamily}.${key}.woff2`)
     });
